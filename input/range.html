@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label for="beans">How many beans can you eat?</label>
+    <input type="range" name="beans" id="beans" min="0" max="500" step="100">
+    <span class="beancount"></span>
+    <script>
+    var beans = document.querySelector('#beans');
+    var count = document.querySelector('.beancount');
+    count.textContent = beans.value;
+    beans.oninput = function() {
+         count.textContent = beans.value;
+    }
+    </script>
+</body>
+</html>
