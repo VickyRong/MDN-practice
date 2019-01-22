@@ -1,0 +1,17 @@
+select {
+    width   : 80px;
+    padding : 10px;
+  }
+  
+  option {
+    padding : 5px;
+    color   : red;
+  }
+  select, option {
+    -webkit-appearance : none; /* To gain control over the appearance on WebKit/Chromium */
+    -moz-appearance : none; /* To gain control over the appearance on Gecko */
+  
+    /* To gain control over the appearance on and Trident (IE)
+       Note that it also works on Gecko and has partial effects on WebKit */  
+    background : none;
+  }
