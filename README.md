@@ -1,2 +1,2 @@
-# html-practice
-practice base on html
+# MDN-practice
+practice base on MDN
